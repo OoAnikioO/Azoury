@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mon Viewer glTF</title>
+    <!-- Inclusion de A-Frame (CDN) -->
+    <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
+  </head>
+  <body>
+    <!-- On crée une scène A-Frame -->
+    <a-scene>
+      <!-- On ajoute un ciel pour que ce soit plus joli -->
+      <a-sky color="#ECECEC"></a-sky>
+
+      <!-- On place notre modèle glTF -->
+      <!-- Remplace "monModele.glb" par le nom réel de ton fichier -->
+      <a-gltf-model src="./monModele.glb" position="0 0 -5"></a-gltf-model>
+
+      <!-- On peut mettre une caméra un peu au-dessus, qui regarde le centre de la scène -->
+      <a-entity camera look-controls position="0 1.6 0"></a-entity>
+    </a-scene>
+  </body>
+</html>
